@@ -1,6 +1,3 @@
-Blanca Adriana Pérez Tobón
-
-
 package.com.generation;
 
 import.java.util.Scanner;
@@ -8,7 +5,7 @@ import.java.util.Scanner;
 public class Codigo4 {
 
 /*Se agrego el metodo main*/
-    public static void main(String[] args) {
+    public static void main(String [] args) {
 /*Se agrego System.in*/
         Scanner s = new Scanner(System.in);
         
