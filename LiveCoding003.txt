@@ -1,0 +1,72 @@
+BLANCA ADRIANA PÉREZ TOBÓN
+
+Evaluó: Carlos Hiram Navarro Moreno
+Orientación al detalle se esta desarrollando más, mayor conocimiento de funciones y lenguaje,paciencia para resolver el problema. 
+Puntos a cuidar y mejorar: Cuidar anidación!!!
+calif: 4/5
+
+
+/////////////////////////////////////////Primer Clase
+
+package org.generation.liveCoding03;
+
+import java.util.Scanner;
+
+public class MangosYNaranjas {
+
+	
+		//Crear un programa
+		
+		private int mangos;
+		private int naranjas;
+		
+		public MangosYNaranjas(int mangos, int naranjas) {
+			super();
+			this.mangos = mangos;
+			this.naranjas = naranjas;				
+		}
+		
+		public void imprimir() {
+		int cajasMangos = mangos;
+		int cajasNaranjas = naranjas;
+		
+		for (int i = 2; i <= Math.min(mangos, naranjas); i++) {
+            if (mangos % i == 0 && naranjas % i == 0) {
+                cajasMangos /= i;
+                cajasNaranjas /= i;
+            }
+        }
+		  System.out.println("Número de cajas: " + cajasMangos);
+	        System.out.println("Número de mangos por caja: " + (mangos / cajasMangos));
+	        System.out.println("Número de naranjas por caja: " + (naranjas / cajasNaranjas));
+	}
+}
+
+
+
+///////////////////////////////////////////////SEGUNDA CLASE
+
+
+
+package org.generation.liveCoding03;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.println("Ingresa el número de mangos: ");
+		int mangos = scanner.nextInt();
+
+		System.out.println("Ingresa el número de naranjas: ");
+		int naranjas = scanner.nextInt();
+		
+		MangosYNaranjas mn = new MangosYNaranjas(mangos, naranjas);
+        mn.imprimir();
+ 
+
+	}
+
+}
