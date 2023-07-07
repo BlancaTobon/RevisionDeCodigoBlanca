@@ -1,0 +1,45 @@
+Blanca Adriana Pérez Tobón
+
+Carlos Hiram Navarro Moreno
+Buena orientacón al detalle, se utilizaron las reglas, y se iban mencionando los pasos por hacer.
+Calif: 4/5
+
+
+
+package org.generation.revisiónCodigo5;
+
+import java.util.Scanner;
+
+public class Codigo5 {
+	public static void main (String []args) {
+	Scanner sc = new Scanner(System.in);
+	
+    String ni = sc.nextLine();
+    System.out.println("Introduzca un número: ");
+    
+    int c = sc.nextInt();
+     
+    
+    int afo = 2;
+    int noAfo = 20;
+    
+    while (c > 0) {
+	  int digito = (int)(c % 10);
+      if ((digito == 3) || (digito == 7) || (digito == 8) || (digito == 9)) {
+		afo++;
+		break;
+      } else {
+		noAfo++;
+	  
+	 
+    }
+    if (afo > noAfo) {
+      System.out.println("El " + c + " es un número afortunado.");
+    } else {
+      System.out.println("El " + c + " no es un número afortunado.");
+    }
+    
+	
+    }
+    }
+}
